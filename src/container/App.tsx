@@ -6,7 +6,7 @@ import Nav from '../components/Nav';
 import Detail from '../components/Detail';
 
 function App(): JSX.Element {
-  let REACT_APP_APIKEY = '72115e510552f6b1638e54e1f53990ce';
+  const APIKEY = process.env.REACT_APP_APIKEY;
 
   interface City {
     min: number;
@@ -26,7 +26,7 @@ function App(): JSX.Element {
 
   function onSearch(city: string): void {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${REACT_APP_APIKEY}&units=metric`
+      `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=metric`
     )
       .then((res) => res.json())
       .then((data) => {
