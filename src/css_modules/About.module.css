@@ -20,5 +20,48 @@
 }
 
 .par {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: justify;
+  width: 420px;
+  line-height: 1.5;
+}
+
+.icon {
+  height: 45px;
+  width: 45px;
+}
+
+.icons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.sep {
+  margin-top: 20px;
+}
+
+.sep_foot {
+  margin-top: 30px;
+  align-self: center;
+  margin-left: 20px;
+}
+
+.openw {
+  position: relative;
+  top: 15px;
+  margin-left: 10px;
+  height: 40px;
+  width: 80px;
+}
+
+.icon_foot {
+  height: 45px;
+  width: 45px;
+  margin-right: 20px;
+  margin-top: 15px;
+  align-self: center;
 }
