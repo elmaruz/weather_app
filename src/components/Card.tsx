@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import s from '../css_modules/Card.module.css';
 
 interface CityProps {
   name: string;
@@ -18,19 +19,27 @@ export default function Card({
   onClose,
 }: CityProps): JSX.Element {
   return (
-    <div>
-      <Link to={`city/${cityId}`}>
-        <h5>{name}</h5>
-        <img
-          src={`http://openweathermap.org/img/wn/${img}@2x.png`}
-          alt='Not found'
-        />
-        <section>
-          <div>Min {min}</div>
-          <div>Max {max}</div>
-        </section>
+    <div className={`${s.cont}`}>
+      <Link to={`city/${cityId}`} className={`${s.link}`}>
+        <div className={`${s.main}`}>
+          <div className={`${s.upper}`}>
+            <h3>{name}</h3>
+            <img
+              src={`http://openweathermap.org/img/wn/${img}@2x.png`}
+              alt='Not found'
+              className={`${s.card_img}`}
+            />
+          </div>
+
+          <div className={`${s.temp_box}`}>
+            <div className={`${s.min}`}>Min {min}°C</div>
+            <div className={`${s.max}`}>Max {max}°C</div>
+          </div>
+        </div>
       </Link>
-      <button onClick={onClose}> x </button>
+      <button onClick={onClose} className={`${s.btn}`}>
+        <div className={`${s.x}`}>x</div>
+      </button>
     </div>
   );
 }

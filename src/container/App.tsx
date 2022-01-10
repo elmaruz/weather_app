@@ -4,7 +4,6 @@ import Cards from '../components/Cards';
 import About from '../components/About';
 import Nav from '../components/Nav';
 import Detail from '../components/Detail';
-import './App.css';
 
 function App(): JSX.Element {
   let REACT_APP_APIKEY = '72115e510552f6b1638e54e1f53990ce';

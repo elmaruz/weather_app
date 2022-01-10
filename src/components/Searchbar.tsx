@@ -1,4 +1,5 @@
-import { useState, ChangeEvent, FormEventHandler } from 'react';
+import { useState } from 'react';
+import s from '../css_modules/Searchbar.module.css';
 
 interface Search {
   onSearch: (city: string) => void;
@@ -25,8 +26,12 @@ export default function Searchbar({ onSearch }: Search): JSX.Element {
           name='search'
           placeholder='City...'
           value={name}
-          onChange={(e) => setName(e.target.value)}></input>
-        <button type='submit'>Search</button>
+          onChange={(e) => setName(e.target.value)}
+          className={`${s.searchbar}`}
+        />
+        <button type='submit' className={`${s.btn}`}>
+          Search
+        </button>
       </form>
     </div>
   );

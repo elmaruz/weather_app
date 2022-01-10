@@ -1,4 +1,5 @@
 import Card from './Card';
+import s from '../css_modules/Cards.module.css';
 
 interface City {
   min: number;
@@ -20,7 +21,7 @@ interface Props {
 
 export default function Cards({ cities, onClose }: Props): JSX.Element {
   return (
-    <div>
+    <div className={`${s.main}`}>
       {cities.length > 0 ? (
         cities.map((elem) => (
           <Card
@@ -34,7 +35,7 @@ export default function Cards({ cities, onClose }: Props): JSX.Element {
           />
         ))
       ) : (
-        <div></div>
+        <div className={`${s.main}`}></div>
       )}
     </div>
   );

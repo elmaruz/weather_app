@@ -4,10 +4,12 @@
   justify-content: space-around;
   align-items: center;
   background-color: rgb(53, 53, 53);
-  height: 50px;
+  height: 60px;
+  margin-bottom: 30px;
 }
 
 .link {
   text-decoration: none;
   color: whitesmoke;
+  padding: 15px;
 }
