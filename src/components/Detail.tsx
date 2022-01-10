@@ -31,11 +31,21 @@ export default function Detail({ onDesc }: Props): JSX.Element {
             className={`${s.card_img}`}
           />
           <h2>{city.name}</h2>
-          <div>Max: {city.max}°C</div>
-          <div>Min: {city.min}°C</div>
-          <div>Wind: {city.wind} km/h</div>
           <div>
-            Coordinates: {city.longitude}° / {city.latitude}°
+            <label className={`${s.label}`}>Max: </label>
+            {city.max}°C
+          </div>
+          <div className={`${s.section}`}>
+            <label className={`${s.label}`}>Min: </label>
+            {city.min}°C
+          </div>
+          <div className={`${s.section}`}>
+            <label className={`${s.label}`}>Wind: </label>
+            {city.wind} km/h
+          </div>
+          <div className={`${s.section}`}>
+            <label className={`${s.label}`}>Coordinates: </label>
+            {city.longitude}° / {city.latitude}°
           </div>
         </div>
       ) : (
