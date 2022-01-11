@@ -22,21 +22,23 @@ interface Props {
 export default function Cards({ cities, onClose }: Props): JSX.Element {
   return (
     <div className={`${s.main}`}>
-      {cities.length > 0 ? (
-        cities.map((elem) => (
-          <Card
-            key={elem.id}
-            name={elem.name}
-            min={elem.min}
-            max={elem.max}
-            img={elem.weather[0].icon}
-            onClose={() => onClose(elem.id)}
-            cityId={elem.id}
-          />
-        ))
-      ) : (
-        <div className={`${s.main}`}></div>
-      )}
+      <div className={`${s.cont}`}>
+        {cities.length > 0 ? (
+          cities.map((elem) => (
+            <Card
+              key={elem.id}
+              name={elem.name}
+              min={elem.min}
+              max={elem.max}
+              img={elem.weather[0].icon}
+              onClose={() => onClose(elem.id)}
+              cityId={elem.id}
+            />
+          ))
+        ) : (
+          <div className={`${s.main}`}></div>
+        )}
+      </div>
     </div>
   );
 }
