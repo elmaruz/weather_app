@@ -48,8 +48,11 @@
 }
 
 .sep_foot {
-  margin-top: 30px;
+  display: flex;
+  position: relative;
+  bottom: 30px;
   align-self: center;
+  margin-bottom: 100px;
   margin-left: 20px;
 }
 
@@ -67,4 +70,34 @@
   margin-right: 20px;
   margin-top: 15px;
   align-self: center;
+}
+
+@media screen and (max-width: 800px) {
+  .box {
+    width: 80%;
+    height: 80%;
+  }
+
+  .par {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .box {
+    width: 80%;
+    height: 100%;
+  }
+
+  .par {
+    width: 90%;
+    height: 60%;
+    margin-top: 20px;
+  }
+
+  .sep_foot {
+    left: 180px;
+    bottom: 60px;
+  }
 }
