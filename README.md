@@ -5,7 +5,7 @@
 
 ### Tech Stack
 
-- TypeScript
+- TypeScript <img src="https://raw.githubusercontent.com/elmaruz/weather_app/public/images/ts.png" alt="" width:"45px"/>
 - React
 
 </br>
