@@ -5,7 +5,7 @@
 
 ### Tech Stack
 
-- TypeScript ![ts](https://user-images.githubusercontent.com/78145719/149007036-ac7c5d5f-ab87-4962-96c3-406aa59ed304.png)
+- TypeScript <img src="https://user-images.githubusercontent.com/78145719/149007036-ac7c5d5f-ab87-4962-96c3-406aa59ed304.png" alt="" width="45"/>
 - React
 
 </br>
