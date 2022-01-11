@@ -5,7 +5,7 @@
 
 ### Tech Stack
 
-- TypeScript <img src="https://raw.githubusercontent.com/elmaruz/weather_app/public/images/ts.png" alt="" width:"45px"/>
+- TypeScript ![ts](https://user-images.githubusercontent.com/78145719/149007036-ac7c5d5f-ab87-4962-96c3-406aa59ed304.png)
 - React
 
 </br>
