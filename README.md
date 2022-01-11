@@ -35,7 +35,7 @@ Click on it to view further details, such as wind speed and coordinates.
  
  <p>Once that's done it's time to create your own environment variables. First, make sure you have an OpenWeatherMap API key, you can download a basic one for free from their page.</p>
  
- <p>Create an empty ```.env``` file and type in:</p>
+ <p>Create an empty .env file and type in:</p>
  
  ```REACT_APP_APIKEY=***********```
  
