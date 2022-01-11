@@ -8,6 +8,8 @@ import Detail from '../components/Detail';
 function App(): JSX.Element {
   const APIKEY = process.env.REACT_APP_APIKEY;
 
+  console.log(APIKEY);
+
   interface City {
     min: number;
     max: number;
