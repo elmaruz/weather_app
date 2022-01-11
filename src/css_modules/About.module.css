@@ -84,7 +84,7 @@
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 800px) and (orientation: landscape) {
   .box {
     width: 80%;
     height: 100%;
