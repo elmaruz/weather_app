@@ -26,7 +26,7 @@ function App(): JSX.Element {
 
   function onSearch(city: string): void {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=metric`
     )
       .then((res) => res.json())
       .then((data) => {
