@@ -9,8 +9,8 @@
 - React
 
 </br>
-</br>
 
+### Description
 <p>A cute little weather app built using TypeScript and React.
 </br>
 
