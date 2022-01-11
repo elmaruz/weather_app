@@ -5,6 +5,9 @@
 - TypeScript
 - React
 
+</br>
+</br>
+
 <p>A cute little weather app built using TypeScript and React.
 </br>
 </br>
