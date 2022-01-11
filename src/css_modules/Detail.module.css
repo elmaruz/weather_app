@@ -30,3 +30,11 @@
 .section {
   margin-top: 5px;
 }
+
+.sun_img {
+  height: 250px;
+  width: 250px;
+  position: fixed;
+  top: 60px;
+  right: 0;
+}

@@ -23,6 +23,7 @@ export default function Detail({ onDesc }: Props): JSX.Element {
   let city = onDesc(cityId);
   return (
     <div className={`${s.main}`}>
+      <img className={`${s.sun_img}`} src='/images/sun.png' alt='not found' />
       {city ? (
         <div className={`${s.box}`}>
           <img
@@ -49,7 +50,13 @@ export default function Detail({ onDesc }: Props): JSX.Element {
           </div>
         </div>
       ) : (
-        <div></div>
+        <div>
+          <img
+            className={`${s.sun_img}`}
+            src='/images/sun.png'
+            alt='not found'
+          />
+        </div>
       )}
     </div>
   );

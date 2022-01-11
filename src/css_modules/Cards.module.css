@@ -15,3 +15,11 @@
   position: absolute;
   top: 60px;
 }
+
+.sun_img {
+  height: 250px;
+  width: 250px;
+  position: fixed;
+  top: 60px;
+  right: 0;
+}

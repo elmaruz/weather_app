@@ -22,6 +22,7 @@ interface Props {
 export default function Cards({ cities, onClose }: Props): JSX.Element {
   return (
     <div className={`${s.main}`}>
+      <img className={`${s.sun_img}`} src='/images/sun.png' alt='not found' />
       <div className={`${s.cont}`}>
         {cities.length > 0 ? (
           cities.map((elem) => (
@@ -36,7 +37,13 @@ export default function Cards({ cities, onClose }: Props): JSX.Element {
             />
           ))
         ) : (
-          <div className={`${s.main}`}></div>
+          <div className={`${s.main}`}>
+            <img
+              className={`${s.sun_img}`}
+              src='/images/sun.png'
+              alt='not found'
+            />
+          </div>
         )}
       </div>
     </div>
