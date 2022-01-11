@@ -24,6 +24,16 @@ export default function Detail({ onDesc }: Props): JSX.Element {
   return (
     <div className={`${s.main}`}>
       <img className={`${s.sun_img}`} src='/images/sun.png' alt='not found' />
+      <img
+        className={`${s.cloud_img}`}
+        src='/images/cloud.png'
+        alt='not found'
+      />
+      <img
+        className={`${s.cloud_img_2}`}
+        src='/images/cloud_rev.png'
+        alt='not found'
+      />
       {city ? (
         <div className={`${s.box}`}>
           <img

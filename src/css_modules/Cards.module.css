@@ -14,6 +14,7 @@
   justify-content: space-evenly;
   position: absolute;
   top: 60px;
+  z-index: 1;
 }
 
 .sun_img {
@@ -22,4 +23,29 @@
   position: fixed;
   top: 60px;
   right: 0;
+  z-index: 0;
+}
+
+.cloud_img {
+  height: 100px;
+  width: 200px;
+  position: fixed;
+  top: 100px;
+  right: 300px;
+  z-index: 0;
+}
+
+.cloud_img_2 {
+  height: 75px;
+  width: 150px;
+  position: fixed;
+  top: 300px;
+  right: 200px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .cloud_img_2 {
+    top: 400px;
+  }
 }
