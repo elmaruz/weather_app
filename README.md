@@ -6,7 +6,7 @@
 ### Tech Stack
 
 - TypeScript <img src="https://user-images.githubusercontent.com/78145719/149007036-ac7c5d5f-ab87-4962-96c3-406aa59ed304.png" alt="" width="35" align="center"/>
-- React
+- React <img src="https://user-images.githubusercontent.com/78145719/149008534-6338690e-c9cd-47af-b74d-948271c5fdfb.png" alt="" width="35" align="center"/>
 
 </br>
 
