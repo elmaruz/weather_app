@@ -63,4 +63,9 @@
   .cloud_img_2 {
     top: 400px;
   }
+
+  .sun_img {
+    height: 130px;
+    width: 130px;
+  }
 }
