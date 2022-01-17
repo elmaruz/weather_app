@@ -5,9 +5,9 @@ export default function About() {
     <div className={`${s.main}`}>
       <div className={`${s.box}`}>
         <h1>About</h1>
-        <p className={`${s.par}`}>
-          A cute little weather app built using TypeScript and React.
-          <p className={`${s.icons}`}>
+        <div className={`${s.par}`}>
+          <p>A cute little weather app built using TypeScript and React.</p>
+          <div className={`${s.icons}`}>
             <img src='/images/ts.png' alt='' className={`${s.icon}`} />
             <img
               src='/images/23529-2-weather-hd.png'
@@ -15,24 +15,26 @@ export default function About() {
               className={`${s.icon}`}
             />
             <img src='/images/react.png' alt='' className={`${s.icon}`} />
+          </div>
+          <p>
+            Type in a city's name and a card will appear, displaying the current
+            temperatures and climate.
           </p>
-          Type in a city's name and a card will appear, displaying the current
-          temperatures and climate.
-          <p className={`${s.sep}`}>
+          <p>
             Click on it to view further details, such as wind speed and
             coordinates.
-            <p>
-              Weather data hosted by
-              <a href='http://api.openweathermap.org'>
-                <img
-                  className={`${s.openw}`}
-                  src='/images/openweather.png'
-                  alt=''
-                />
-              </a>
-            </p>
           </p>
-        </p>
+          <div>
+            <div>
+              <p>
+                Weather data hosted by{' '}
+                <a href='http://api.openweathermap.org' className={s.openw}>
+                  OpenWeatherMap
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
         <div className={`${s.sep_foot}`}>
           <a href='https://github.com/elmaruz'>
             <img className={`${s.icon_foot}`} src='/images/github.png' alt='' />
