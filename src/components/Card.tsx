@@ -26,7 +26,7 @@ export default function Card({
             <h3>{name}</h3>
             <img
               src={`http://openweathermap.org/img/wn/${img}@2x.png`}
-              alt='Not found'
+              alt=''
               className={`${s.card_img}`}
             />
           </div>

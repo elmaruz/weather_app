@@ -8,17 +8,13 @@ export default function About() {
         <p className={`${s.par}`}>
           A cute little weather app built using TypeScript and React.
           <p className={`${s.icons}`}>
-            <img src='/images/ts.png' alt='not found' className={`${s.icon}`} />
+            <img src='/images/ts.png' alt='' className={`${s.icon}`} />
             <img
               src='/images/23529-2-weather-hd.png'
-              alt='not found'
+              alt=''
               className={`${s.icon}`}
             />
-            <img
-              src='/images/react.png'
-              alt='not found'
-              className={`${s.icon}`}
-            />
+            <img src='/images/react.png' alt='' className={`${s.icon}`} />
           </p>
           Type in a city's name and a card will appear, displaying the current
           temperatures and climate.
@@ -31,7 +27,7 @@ export default function About() {
                 <img
                   className={`${s.openw}`}
                   src='/images/openweather.png'
-                  alt='not found'
+                  alt=''
                 />
               </a>
             </p>
@@ -39,17 +35,13 @@ export default function About() {
         </p>
         <div className={`${s.sep_foot}`}>
           <a href='https://github.com/elmaruz'>
-            <img
-              className={`${s.icon_foot}`}
-              src='/images/github.png'
-              alt='not found'
-            />
+            <img className={`${s.icon_foot}`} src='/images/github.png' alt='' />
           </a>
           <a href='http://www.linkedin.com/in/leonardo-marussig-dev'>
             <img
               className={`${s.icon_foot}`}
               src='/images/linkedin.png'
-              alt='not found'
+              alt=''
             />
           </a>
         </div>

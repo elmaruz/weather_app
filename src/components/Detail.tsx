@@ -23,22 +23,14 @@ export default function Detail({ onDesc }: Props): JSX.Element {
   let city = onDesc(cityId);
   return (
     <div className={`${s.main}`}>
-      <img className={`${s.sun_img}`} src='/images/sun.png' alt='not found' />
-      <img
-        className={`${s.cloud_img}`}
-        src='/images/cloud.png'
-        alt='not found'
-      />
-      <img
-        className={`${s.cloud_img_2}`}
-        src='/images/cloud_rev.png'
-        alt='not found'
-      />
+      <img className={`${s.sun_img}`} src='/images/sun.png' alt='' />
+      <img className={`${s.cloud_img}`} src='/images/cloud.png' alt='' />
+      <img className={`${s.cloud_img_2}`} src='/images/cloud_rev.png' alt='' />
       {city ? (
         <div className={`${s.box}`}>
           <img
             src={`http://openweathermap.org/img/wn/${city.img}@2x.png`}
-            alt='Not found'
+            alt=''
             className={`${s.card_img}`}
           />
           <h2>{city.name}</h2>
@@ -61,11 +53,7 @@ export default function Detail({ onDesc }: Props): JSX.Element {
         </div>
       ) : (
         <div>
-          <img
-            className={`${s.sun_img}`}
-            src='/images/sun.png'
-            alt='not found'
-          />
+          <img className={`${s.sun_img}`} src='/images/sun.png' alt='' />
         </div>
       )}
     </div>
